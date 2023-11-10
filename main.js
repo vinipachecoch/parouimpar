@@ -3,7 +3,7 @@ console.log("esta funcionando...");
 const painel1 = document.querySelector("#par-ou-impar")
 const painel2 = document.querySelector("#escolha-numeros")
 const resultado = document.querySelector("#resultado")
-
+var numerocomputador;
 function escolherParOuImpar(parOuImpar){
     this.parOuImpar = parOuImpar
     console.log(parOuImpar)
@@ -30,4 +30,14 @@ function selecionar(id){
     const botao = document.getElementById(id);
     botao.classList.add("selecionado");
 
+}
+
+function escolhernumerocomputador() {
+    numerocomputador = Math.floor(Math.random() * 6);
+    console.log(numerocomputador);
+
+}
+
+function jogaparouimpar() {
+    console.log('chamou a função jogar...');
 }
