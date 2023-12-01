@@ -72,8 +72,12 @@ function jogarparouimpar() {
    escolhernumerocomputador();
    var nomevencedor = verificarvencedor();
 
-   console.log(parOuImpar);
-   console.log(numeroUsuario);
-   console.log(numerocomputador);
-   console.log(nomevencedor);
+   resultado.innerHTML += "<br>par ou impar? " + parOuimparescolhido;
+   resultado.innerHTML += "<br>usuario escolheu " + numeroUsuario;
+   resultado.innerHTML += "<br>computador escolheu: " + numerocomputador;
+   nomevencedor == "usuario" ? frase = "parabens voce venceu!" : frase = "que pena! voce perdeu!";
+   resultado.innerHTML += "<br>" + frase;
+
+
+   
 }
