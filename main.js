@@ -4,6 +4,7 @@ const painel1 = document.querySelector("#par-ou-impar")
 const painel2 = document.querySelector("#escolha-numeros")
 const resultado = document.querySelector("#resultado")
 const botaojogar = document.querySelector("#botao-jogar");
+const botaojogarnovamente = document.querySelector("#botao-jogar-novamente");
 var numerocomputador;
 function escolherParOuImpar(parOuImpar){
     this.parOuImpar = parOuImpar
@@ -77,6 +78,8 @@ function jogarparouimpar() {
    resultado.innerHTML += "<br>computador escolheu: " + numerocomputador;
    nomevencedor == "usuario" ? frase = "parabens voce venceu!" : frase = "que pena! voce perdeu!";
    resultado.innerHTML += "<br>" + frase;
+
+   botaojogarnovamente.style.display = "block";
 
 
    
